@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body onload='document.survey-form.email.focus()'>
+
+
+    <h1 id="title">Hello world, we are developers</h1>
+    <p id="description">For now, the test suite only works in Chrome!
+      Please read the README below in the JS Editor before beginning.
+      Feel free to delete this message once you have read it.
+      Good luck and Happy Coding!
+    </p>
+    <form id="survey-form">
+
+      
+      <label id="name-label" for="name">Name</label><br/>
+      <input type="text" id="name" name="name" placeholder="Enter name" required><br/>
+      <label id="email-label" for="name">Email</label><br>
+      <input type="text" id="email" name="E-mail" placeholder="name@email.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> <br/>
+      <label for="number" id="number-label">Number</label><br/>
+      <input type="number" id="number" min="1" max="10" placeholder="Enter number" required><br/>
+      <select name="dropdown" id="dropdown">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select><br/>
+
+
+      <input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label><br/>
+
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+
+<label for="additional-comments">Additional Comments</label>
+
+<textarea id="additional-comments" name="comment" rows="4" cols="50">
+
+</textarea> 
+
+
+
+<button id="submit" onclick="ValidateEmail(document.survey-form.email)">submit </button>
+
+
+    </form>
+  
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   
+
+
+
+    
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <script  src="js/index.js"></script>
+  </body>
+</html>
